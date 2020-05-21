@@ -1,0 +1,18 @@
+debug_flag: False
+adversarial_flag: False
+
+
+# training configurations search space:
+model_name: ["Inception_LSTM"]
+
+loss_name: ["BCE"]
+optimizer_name: ["Adam"]
+n_epochs: [40]  # 100
+batch_size: [4096]  # 4096 1024
+learning_rate: [0.001]
+hidden_dim: [20]
+n_layers: [3]
+epsilon: [0]  # [0.01, 0.05, 0.001]
+weight_decay: [0] # [0, 0.01, 0.1]
+
+
